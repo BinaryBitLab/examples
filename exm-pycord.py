@@ -12,7 +12,7 @@ client = bridge.Bot(command_prefix="?", intents=intents)
 # An event Handler
 @client.event
 async def on_ready():
-    print(f"Logged In As : {bot.user}")
+    print(f"Logged In As : {bot.user}") #when the bot is online it will print Logged in as (bot name) in the terminal 
 
 # A Bridge Command (Makes a command used by prefix and /)
 @client.bridge_command(name="hello")
